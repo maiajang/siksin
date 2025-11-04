@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'HS 2.1';
+    src: url('HSBombaram21.eot');
+    src: url('HSBombaram21.eot?#iefix') format('embedded-opentype'),
+        url('HSBombaram21.woff2') format('woff2'),
+        url('HSBombaram21.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
