@@ -142,9 +142,11 @@
                         </div><!-- .item end -->
                     </div><!-- .list end -->
                 </div><!-- .image-section end -->
-                <button class="view-more">
-                    VIEW MORE
-                    </buton><!-- .view-more end -->
+                <div class="btn">
+                    <button class="view-more">
+                        VIEW MORE
+                    </button><!-- .view-more end -->
+                </div><!-- .btn -->
             </div><!-- .inner end -->
         </section><!-- .curation end -->
         <section class="selection">
@@ -158,20 +160,20 @@
                 <div class="list">
                     <div class="item">
                         <div class="image">
-                            <img src="img/icon-michelin.svg" class="logo">
-                            <img src="img/icon-michelin-guide.svg" class="brand-name">
+                            <div class="logo-image"><img src="img/icon-michelin.svg" class="logo"></div>
+                            <div class="logo-text"><img src="img/icon-michelin-guide.svg" class="brand-name"></div>
                         </div><!-- .image end -->
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="image">
-                            <img src="img/icon-blue-ribbon.svg" class="logo">
-                            <img src="img/icon-text-blue-ribbon.svg" class="brand-name">
+                            <div class="logo-image"><img src="img/icon-blue-ribbon.svg" class="logo"></div>
+                            <div class="logo-text"><img src="img/icon-text-blue-ribbon.svg" class="brand-name"></div>
                         </div>
                     </div><!-- .item end -->
                     <div class="item">
                         <div class="image">
-                            <img src="img/icon-chef.svg" class="logo">
-                            <img src="img/icon-chefschoice.svg" class="brand-name">
+                            <div class="logo-image"><img src="img/icon-chef.svg" class="logo"></div>
+                            <div class="logo-text"><img src="img/icon-Chefs-choice.svg" class="brand-name"></div>
                         </div>
                     </div><!-- .item end -->
                 </div><!-- .list end -->
@@ -281,73 +283,95 @@
                 <div class="line br"></div>
                 <div class="center">
                     <h2 class="title">
-                        나의<span class="italic"> Gourmet Map</span>
+                        나의<p class="italic"> Gourmet Map</p>
                     </h2><!-- .title end -->
                     <p>당신의 미식 여정을 한눈에,<br>다음 맛집은 어디로?</p>
                     <button class="btn">VIEW MORE</button>
                 </div><!-- .center end -->
-                <div class="item top-left">
-                    <img src="img/map-biet.jpg" alt="비엣">
-                    <strong class="name">비엣</strong>
-                    <p class="location">부산 해운대</p>
-                    <p class="date">2025.02.17</p>
-                </div><!-- .item top-left end -->
-                <div class="item top-right">
-                    <img src="img/map-yaki.jpg" alt="야키로아">
-                    <strong class="name">야키로아</strong>
-                    <p class="location">경기도 수원</p>
-                    <p class="date">2025.11.04</p>
-                </div><!-- .item top-left end -->
-                <div class="item btm-left">
-                    <img src="img/map-max.jpg" alt="맥스버거">
-                    <strong class="name">맥스버거</strong>
-                    <p class="location">대구 수성구</p>
-                    <p class="date">2025.05.29</p>
-                </div><!-- .item top-left end -->
-                <div class="item top-left">
-                    <img src="img/map-honey.jpg" alt="허니비 카페">
-                    <strong class="name">허니비 카페</strong>
-                    <p class="location">부산 영도</p>
-                    <p class="date">2025.08.13</p>
-                </div><!-- .item top-left end -->
+                <div class="list">
+                    <div class="top">
+                        <div class="item top-left">
+                            <img src="img/map-biet.jpg" alt="비엣">
+                            <div class="text">
+                                <strong class="name">비엣</strong>
+                                <p class="location">부산 해운대</p>
+                                <p class="date">2025.02.17</p>
+                            </div>
+                        </div><!-- .item top-left end -->
+                        <div class="item top-right">
+                            <img src="img/map-yaki.jpg" alt="야키로아">
+                            <div class="text">
+                                <strong class="name">야키로아</strong>
+                                <p class="location">경기도 수원</p>
+                                <p class="date">2025.11.04</p>
+                            </div>
+                        </div><!-- .item top-right end -->
+                    </div>
+                    <div class="btm">
+                        <div class="item btm-left">
+                            <img src="img/map-max.jpg" alt="맥스버거">
+                            <div class="text">
+                                <strong class="name">맥스버거</strong>
+                                <p class="location">대구 수성구</p>
+                                <p class="date">2025.05.29</p>
+                            </div>
+                        </div><!-- .item btm-left end -->
+                        <div class="item btm-right">
+                            <img src="img/map-honey.jpg" alt="허니비 카페">
+                            <div class="text">
+                                <strong class="name">허니비 카페</strong>
+                                <p class="location">부산 영도</p>
+                                <p class="date">2025.08.13</p>
+                            </div>
+                        </div><!-- .item btm-right end -->
+                    </div>
+                </div><!-- .list -->
             </div><!-- .inner end -->
         </section><!-- .gourmet-map -->
-        <footer class="footer">
+        <section class="footer">
             <div class="inner">
-                <a class="footer-logo"><img src="img/icon-siksin.svg" alt="식신로고"></a>
+                <a href="#" class="footer-logo">
+                    <img src="img/icon-siksin.svg" alt="식신로고">
+                </a>
+
                 <div class="text">
                     <div class="company-info">
-                        <div class="line 1">
-                            <a href="#"><b>회사 소개</b></a>
-                            <a href="#"><b>기업회원 이용약관</b></a>
-                            <a href="#"><b>개인정보처리방침</b></a>
-                            <a href="#"><b>사이트맵</b></a>
-                        </div><!-- .line 1 end -->
-                        <div class="line 2">
+                        <div class="line line1">
+                            <a href="#"><strong>회사 소개</strong></a>
+                            <a href="#"><strong>기업회원 이용약관</strong></a>
+                            <a href="#"><strong>개인정보처리방침</strong></a>
+                            <a href="#"><strong>사이트맵</strong></a>
+                        </div>
+
+                        <div class="line line2">
                             <p>식신(주)</p>
-                            <p>대표자 안병익</p>
+                            <p>대표자 안병익</p>
                             <p>서울특별시 강남구 테헤란로8길 16, 9층 (지희빌딩)</p>
-                        </div><!-- .line 2 end -->
-                        <div class="line 3">
-                            <p>사업자등록번호 214-88-59748</p>
-                            <a href="tel:1577-3957">TEL 1577-3957</p>
-                                <p>FAX 02.533.1909</p>
-                                <a href="mailto:info@siksinhot.com">EMAIL info@siksinhot.com</p>
-                        </div><!-- .line 3 end -->
-                    </div><!-- .company-info -->
+                        </div>
+
+                        <div class="line line3">
+                            <p>사업자등록번호 214-88-59748</p>
+                            <p><a href="tel:1577-3957">TEL 1577-3957</a></p>
+                            <p>FAX 02.533.1909</p>
+                            <p><a href="mailto:info@siksinhot.com">EMAIL info@siksinhot.com</a></p>
+                        </div>
+                    </div><!-- .company-info end -->
+
                     <div class="social-media">
                         <a href="#"><img src="img/icon-Facebook.svg" alt="페이스북"></a>
                         <a href="#"><img src="img/icon-Instagram.svg" alt="인스타그램"></a>
                         <a href="#"><img src="img/icon-naver-blog.svg" alt="네이버블로그"></a>
-                    </div><!-- .social-media end -->
-                    <p>Copyright (c) SIKSIN. All Rights Reserved.</p>
-                </div><!-- .text end -->
+                    </div>
+
+                    <p class="copyright">Copyright (c) SIKSIN. All Rights Reserved.</p>
+                </div>
+
                 <div class="footer-icon">
                     <button class="chat"><img src="img/icon-chat.svg" alt="채팅"></button>
                     <button class="top"><img src="img/icon-top.svg" alt="탑버튼"></button>
-                </div><!-- .footer-icon end -->
-            </div><!-- .inner -->
-        </footer><!-- .footer end -->
+                </div>
+            </div>
+        </section>
     </div><!-- #wrap end -->
 </body>
 

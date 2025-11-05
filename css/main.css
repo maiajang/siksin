@@ -67,7 +67,7 @@ body {
 }
 
 #wrap {
-    max-width: 1200px;
+    max-width: 1400px;
     width: calc(100% - 40px);
     margin: 0 auto;
 }
@@ -77,8 +77,10 @@ section {
 }
 
 .inner {
+    margin-top: 100px;
     max-width: 1200px;
     width: calc(100% - 40px);
+    margin: 0 auto;
 }
 
 .inner.main {
@@ -91,6 +93,7 @@ h2.title {
 
     font-family: 'HS 2.1';
     font-size: 72px;
+    margin-top: 160px;
 }
 
 h2.title .italic {
@@ -100,23 +103,26 @@ h2.title .italic {
 
 .sub-title {
     font-size: 32px;
-    line-height: 2;
+    line-height: 1.4;
     color: #fff;
-    opacity: 50%;
+    opacity: 90%;
+    margin-bottom: 80px;
 }
 
 .list {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 
 }
 
 .list .item .image {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 600px;
     border: 1px solid #D4AF37;
     border-radius: 12px;
     overflow: hidden;
+    gap: 24px;
 
 }
 
@@ -131,14 +137,16 @@ h2.title .italic {
 }
 
 
+.btn {
+    width: 200px;
+    height: 60px;
+}
+
 .veiw-more {
     font-size: 20px;
     border: 1px solid #fff;
     border-radius: 12px;
-    width: 200px;
-    height: 60px;
-    opacity: 60%;
-    background-color: ;
+
 }
 
 
@@ -215,7 +223,7 @@ h2.title .italic {
 }
 
 .header .inner .header-nav .dotted-line {
-    width: 482px;
+    width: 45%;
     height: 1px;
     border: 1px dashed #D4AF37;
 }
@@ -233,7 +241,7 @@ h2.title .italic {
 }
 
 .main .main-visual>img {
-    width: 560px;
+    width: 600px;
     object-fit: cover;
 }
 
@@ -330,31 +338,73 @@ h2.title .italic {
     margin: 0 auto;
 }
 
+.curation .inner .image-section .list {
+    gap: 24px;
+}
+
 .curation .inner .image-section .list .item {
     position: relative;
 }
 
-.curation .inner .image-section .list .item .image {
-    background: #000;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-}
+.curation .inner .image-section .list .item .image {}
 
 .curation .inner .image-section .list .item .image img {}
 
 .curation .inner .image-section .list .item .text {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 60px 0;
+    background: #000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
 }
 
-.curation .inner .image-section .list .item .text .name {}
+.curation .inner .image-section .list .item .text .name {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-.curation .inner .image-section .list .item .text .where {}
+.curation .inner .image-section .list .item .text .where {
+    font-size: 18px;
+    opacity: 80%;
+}
 
 .curation .inner .image-section .list .item .text .rate {}
 
-.selection .inner .list .selection .inner .list .item .selection .inner .list .item .image .selection .inner .list .item .image img.logo {}
+.selection .inner .list {}
+
+.selection .inner .list .item {
+    background: #706d68;
+    background: linear-gradient(143deg, rgba(112, 109, 104, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.selection .inner .list .item .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.selection .inner .list .item .logo-image {
+    height: 120px;
+}
+
+.selection .inner .list .item:first-child .logo-text {
+    height: 24px;
+}
+
+.selection .inner .list .item:nth-child(2) .logo-text {
+    height: 18px;
+}
+
+
+
+.selection .inner .list .item .image img.logo {}
 
 .selection .inner .list .item .image img.brand-name {}
 
@@ -362,14 +412,18 @@ h2.title .italic {
 
 .story .list {
     overflow: hidden;
+
 }
 
 .story .list .item {}
 
 .story .list .item .image {
+    width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 
 }
 
@@ -425,3 +479,138 @@ h2.title .italic {
     color: #fff;
     margin-top: 4px;
 }
+
+.gourmet-map {
+    width: 1180px;
+    margin: 160px auto;
+    position: relative;
+}
+
+.gourmet-map .inner {}
+
+.gourmet-map .inner .line {}
+
+.gourmet-map .inner .line.tl {}
+
+.gourmet-map .inner .line.tr {}
+
+.gourmet-map .inner .line.bl {}
+
+.gourmet-map .inner .line.br {}
+
+.gourmet-map .inner .center {
+    width: 524px;
+    height: 524px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #D4AF37;
+    border-radius: 50%;
+
+}
+
+.gourmet-map .inner .center .title {}
+
+.gourmet-map .inner .center .title .italic {}
+
+.gourmet-map .inner .list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 420px;
+}
+
+.gourmet-map .inner .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gourmet-map .inner .btm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gourmet-map .inner .item {}
+
+.gourmet-map .inner .item.top-left {}
+
+.gourmet-map .inner .item.top-right {}
+
+.gourmet-map .inner .item.btm-left {}
+
+.gourmet-map .inner .item.btm-left {}
+
+.gourmet-map .inner .item img {
+    width: 174px;
+    height: 186px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.gourmet-map .inner .item strong {
+    font-size: 24px;
+}
+
+.gourmet-map .inner .item p.location {
+    opacity: 60%;
+}
+
+.gourmet-map .inner .item p.date {}
+
+.footer {}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .inner a.footer-logo {}
+
+.footer .inner .footer-logo img {}
+
+.footer .inner .text {
+    text-align: center;
+}
+
+.footer .inner .text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer .inner .text .company-info, 
+.copyright {
+    color: #fff;
+    opacity: 60%;
+}
+
+.footer .inner .text .company-info .line {
+margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer .inner .text .company-info .line a {
+    display: block;
+}
+
+.footer .inner .text .company-info .line a strong {}
+
+.footer .inner .text .company-info .line p {}
+
+.footer .inner .text .company-info .line .line1 {}
+
+.footer .inner .text .company-info .line .line2 {}
+
+.footer .inner .text .social-media {}
+
+.footer .inner .text p.copyright {}
+
+.footer .inner .text .footer-icon {}
+
+.footer .inner .text .footer-icon button {}
+
+.footer .inner .text .footer-icon .chat {}
+
+.footer .inner .text .footer-icon .top {}
